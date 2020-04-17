@@ -9,15 +9,12 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
-      - name: node module
-        uses: actions/setup-node@v1
-          with:
-            node-version: 12
-        run: npm ci
-        run: npm run build
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm ci
+      - run: npm run build
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
