@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       - name: node module
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v1
           with:
             node-version: 12
         run: npm ci
