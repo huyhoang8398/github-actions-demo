@@ -1,0 +1,29 @@
+{
+  "name": "github-actions-demo",
+  "version": "1.0.0",
+  "description": "CI/CD with github actions",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack src/app.js -o public/bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyhoang8398/github-actions-demo.git"
+  },
+  "keywords": [
+    "github",
+    "actions"
+  ],
+  "author": "kn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huyhoang8398/github-actions-demo/issues"
+  },
+  "homepage": "https://github.com/huyhoang8398/github-actions-demo#readme",
+  "devDependencies": {
+    "jest": "^25.3.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
